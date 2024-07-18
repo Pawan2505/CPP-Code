@@ -1,0 +1,1 @@
+structure members are by default public whereas class members are by default private.
