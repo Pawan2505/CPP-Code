@@ -1,0 +1,1 @@
+ MyClass obj(10);

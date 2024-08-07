@@ -1,77 +1,76 @@
-#include <iostream>
-#include <string>
+// #include <iostream>
+// #include <string>
 
-class Student
-{
-private:
-    std::string name;
-    int rollNumber;
-    float gpa;
+// using namespace std;
 
-public:
-    // Default constructor
-    Student() : name(""), rollNumber(0), gpa(0.0) {}
+// class Student
+// {
+// private:
+//    string name;
+//     int rollNumber;
+//     float gpa;
 
-    // Parameterized constructor
-    Student(const std::string &studentName, int studentRollNumber, float studentGpa)
-        : name(studentName), rollNumber(studentRollNumber), gpa(studentGpa) {}
+// public:
+  
+//     Student() : name(""), rollNumber(0), gpa(0.0) {}
 
-    // Copy constructor
-    Student(const Student &other)
-        : name(other.name), rollNumber(other.rollNumber), gpa(other.gpa)
-    {
-        // Demonstrate deep copy
-        std::cout << "Copy constructor called. Deep copying student: " << other.name << std::endl;
-    }
+   
+//     Student(string studentName, int studentRollNumber, float studentGpa)
+//         : name(studentName), rollNumber(studentRollNumber), gpa(studentGpa) {}
 
-    // Getter methods
-    std::string getName() const
-    {
-        return name;
-    }
+//     // Copy constructor
+//     Student(Student &other)
+//         : name(other.name), rollNumber(other.rollNumber), gpa(other.gpa)
+  
 
-    int getRollNumber() const
-    {
-        return rollNumber;
-    }
+//     // Getter methods
+//    string getName()
+//     {
+//         return name;
+//     }
 
-    float getGpa() const
-    {
-        return gpa;
-    }
+//     int getRollNumber() const
+//     {
+//         return rollNumber;
+//     }
 
-    // Member function to print student details
-    void printStudentDetails() const
-    {
-        std::cout << "Name: " << name << ", Roll Number: " << rollNumber << ", GPA: " << gpa << std::endl;
-    }
+//     float getGpa() const
+//     {
+//         return gpa;
+//     }
 
-    // Function to compare two students (by roll number)
-    bool hasSameRollNumber(const Student &other) const
-    {
-        return rollNumber == other.rollNumber;
-    }
+//     // Member function to print student details
+//     void printStudentDetails() const
+//     {
+//         std::cout << "Name: " << name << ", Roll Number: " << rollNumber << ", GPA: " << gpa << std::endl;
+//     }
 
-    // Function to update GPA
-    void updateGpa(float newGpa)
-    {
-        gpa = newGpa;
-    }
-};
+//     // Function to compare two students (by roll number)
+//     bool hasSameRollNumber(const Student &other) const
+//     {
+//         return rollNumber == other.rollNumber;
+//     }
 
-int main()
-{
-    // Using parameterized constructor
-    Student student1("John Doe", 123, 3.75);
-    Student student2("Jane Smith", 124, 3.85);
+//     // Function to update GPA
+//     void updateGpa(float newGpa)
+//     {
+//         gpa = newGpa;
+//     }
+// };
 
-    // Using copy constructor
-    Student student3(student1);
+// int main()
+// {
+//     // Using parameterized constructor
+//     Student student1("John Doe", 123, 3.75);
+//     Student student2("Jane Smith", 124, 3.85);
 
-    // Print details of students
-    student1.printStudentDetails();
-    student2.printStudentDetails();
-    student3.printStudentDetails(); // Should have same details as student1
+//     // Using copy constructor
+//     Student student3(student1);
 
-    return 0;
-}
+//     // Print details of students
+//     student1.printStudentDetails();
+//     student2.printStudentDetails();
+//     student3.printStudentDetails(); // Should have same details as student1
+
+//     return 0;
+// }

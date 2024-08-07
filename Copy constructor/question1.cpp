@@ -20,6 +20,8 @@ public:
     {
         this->real = real;
         this->imag = imag;
+
+        cout << "Parameterized constructor";
     }
 
     // Copy constructor
@@ -27,6 +29,7 @@ public:
     {
         this->real = other.real; // Shallow copy
         this->imag = other.imag; // Shallow copy
+        cout << "Copy Parameterized constructor";
     }
 
     void printRecord() const
@@ -39,12 +42,8 @@ public:
 int main()
 {
     Complex c1(10, 20); // Calls parameterized constructor
-    Complex c2;         // Calls parameterless constructor
     Complex c3 = c1;    // Calls copy constructor
 
-    // Print records
-    c1.printRecord();
-    c2.printRecord();
     c3.printRecord();
 
     return 0;

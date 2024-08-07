@@ -25,7 +25,7 @@ int main()
     Sample obj;
 
     cout << "Object of Sample class is going out of scope." << endl;
-
+   Sample obj1;
     // Destructor will be called automatically here when the object goes out of scope
 
     return 0;
