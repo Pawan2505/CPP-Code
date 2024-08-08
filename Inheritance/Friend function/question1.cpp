@@ -14,18 +14,23 @@ public:
         this->num1 = 10;
         this->num2 = 20;
     }
-    friend void print();
+    friend class B;
 };
-void print()
+class B
 {
-    Test t;
-    cout << "Num1 : " << t.num1 << endl;
-    cout << "Num2 : " << t.num2 << endl;
-}
+public:
+    void print()
+    {
+        Test t;
+        cout << "Num1 : " << t.num1 << endl;
+        cout << "Num2 : " << t.num2 << endl;
+    }
+};
+
 int main(void)
 {
-    // Test t;
-    // t.print( ); //Not OK
-    print();
+
+    B t;
+    t.print();
     return 0;
 }
