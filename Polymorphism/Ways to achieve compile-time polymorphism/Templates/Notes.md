@@ -1,0 +1,1 @@
+Allow functions and classes to operate with generic types. The actual type is specified at compile time when the function or class is instantiated.

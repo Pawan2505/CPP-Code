@@ -6,20 +6,21 @@ protected:
     int baseValue;
 
 public:
-    // Base() : baseValue(10) {}
-    Base()
-    {
-        this->baseValue = 10;
-    }
+    Base() : baseValue(10) {}
+
+    // Base()
+    // {
+    //     this->baseValue = 10;
+    // }
 
     void displayBase()
     {
-        cout << "Base class value: " << baseValue <<endl;
+        cout << "Base class value: " << baseValue << endl;
     }
 
     static void staticFunction()
     {
-        cout << "Static function in Base class" <<endl;
+        cout << "Static function in Base class" << endl;
     }
 };
 
@@ -34,22 +35,20 @@ public:
     // Overriding displayBase function
     void displayBase()
     {
-        cout << "Overridden Base class value: " << Base::baseValue <<endl;
+        // this->baseValue = 30;
+        cout << "Overridden Base class value: " << Base::baseValue << endl;
     }
 };
 
 int main()
 {
-   
+
     Base::staticFunction();
 
-   
     Derived obj;
 
-   
     obj.displayBase();    // Calls overridden function in Derived class
     obj.displayDerived(); // Accesses base class member using scope resolution operator
-
 
     return 0;
 }

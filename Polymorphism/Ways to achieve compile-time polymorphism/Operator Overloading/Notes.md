@@ -1,0 +1,1 @@
+ Allows you to define custom behavior for operators (like +, -, *, etc.) for class objects. The correct operator function is chosen based on the operands involved.

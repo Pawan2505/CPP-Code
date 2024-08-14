@@ -8,7 +8,7 @@ private:
     int num1;
 
 public:
-    Test(void)
+    Test()
     {
         this->num1 = 10;
     }

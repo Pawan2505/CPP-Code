@@ -16,6 +16,12 @@ public:
     }
     friend class B;
 };
+// void print()
+// {
+//     Test t;
+//     cout << "Num1 : " << t.num1 << endl;
+//     cout << "Num2 : " << t.num2 << endl;
+// }
 class B
 {
 public:
@@ -32,5 +38,6 @@ int main(void)
 
     B t;
     t.print();
+    // print();
     return 0;
 }

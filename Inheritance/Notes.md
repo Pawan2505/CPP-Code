@@ -85,8 +85,7 @@ sequence.
 
 -> From any constructor of deived class, by default, base class's parameterless constructor gets called.
 
--> Using constructor's base initializer list, we can call, any constructor of base class from constructor of
-derived class.
+-> Using constructor's base initializer list, we can call, any constructor of base class from constructor of derived class.
 
 <!-- Example:  -->
 
