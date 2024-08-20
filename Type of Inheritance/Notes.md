@@ -12,8 +12,9 @@ called as interface inheritance.
 2. Multiple inheritance
 3. Hierarchical inheritace
 4. Multilevel inheritance
+5. Hybrid inheritance
 
-<!-- mplementation inheritance -->
+<!-- implementation inheritance -->
 
 ![alt text](image-1.png)
 
