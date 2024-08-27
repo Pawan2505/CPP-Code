@@ -6,7 +6,7 @@ class Car
 {
 public:
     // Abstract method (pure virtual function) to turn the car
-    virtual void turnSteeringWheel(string direction) = 0;
+    virtual void turnSteeringWheel(string direction);
 };
 
 // Derived class implementing the Car interface

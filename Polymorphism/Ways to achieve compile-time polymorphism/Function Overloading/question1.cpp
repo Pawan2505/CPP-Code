@@ -1,19 +1,30 @@
 #include <iostream>
 using namespace std;
 
-class MyClass {
+class MyClass
+{
 public:
-    void display() {
+    void display()
+    {
         cout << "Display with no arguments" << endl;
     }
-    void display(int x) {
+    int display(int x)
+    {
         cout << "Display with one integer: " << x << endl;
+        // return x;
     }
+    // void display(int x)
+    // {
+    //     cout << "Display with one integer: " << x << endl;
+    // }
 };
 
-int main() {
+int main()
+{
     MyClass obj;
-    obj.display();     
-    obj.display(10); 
+    obj.display();
+    obj.display(10);
+    // obj.display(10.5);
+    cout << obj.display(10) << endl;
     return 0;
 }

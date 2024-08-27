@@ -7,8 +7,9 @@ int main()
     {
         try
         {
-            string ex("exception");
-            throw ex;
+            // string ex("exception");
+            // throw ex;
+            throw 5;
         }
         catch (string &ex)
         {
@@ -18,7 +19,7 @@ int main()
     }
     catch (string &ex)
     {
-        cout << "Inside outer catch block" << endl;
+        cout << "Inside outer catch block " << ex << endl;
     }
     catch (...)
     {
