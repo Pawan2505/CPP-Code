@@ -11,7 +11,7 @@ struct Employee
 int main()
 {
     typedef struct Employee Employee_t;
-     Employee emp1;   // OK
+    Employee emp1;   // OK
     Employee_t emp2; // OK
 
     //input/output for emp1

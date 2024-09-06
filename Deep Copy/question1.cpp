@@ -18,9 +18,9 @@ public:
     }
 
     
-    // ~SimpleClass(){
-    //     delete data; // Free the allocated memory
-    // }
+    ~SimpleClass(){
+        delete data; // Free the allocated memory
+    }
 
    
     void display(){
